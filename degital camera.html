@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dreamycam - Stylish Edition</title>
+  <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: #ff4f8a; /* Stylish pink */
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff4f8a;
+    }
+    
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(135deg, #ffe6f1, #ff99cc);
+      padding: 2.5rem;
+      margin: 1rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .hero-text {
+      max-width: 500px;
+    }
+    .hero-text h2 {
+      font-size: 2.5rem;
+      color: #ff4f8a;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+    .hero-text p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: #444;
+    }
+    .hero-text button {
+      background-color: #ff4f8a;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+    .hero-text button:hover {
+      background-color: #d93f75;
+    }
+    .hero img {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Product Section */
+    .products-section {
+      background-color: #fff;
+      padding: 1.5rem;
+      margin: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+    .products-section h3 {
+      margin-bottom: 1rem;
+      color: #ff4f8a;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #ff99cc;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      padding: 1rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .product-info {
+      padding: 1rem;
+    }
+    .product-info h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .product-info .rating {
+      color: #ffcc00;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    .product-info .price {
+      font-size: 1.2rem;
+      color: #ff4f8a;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    .product-info button {
+      background-color: #ff4f8a;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+    .product-info button:hover {
+      background-color: #d93f75;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin: 2rem 0;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Dreamycam</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <!-- Hero / Banner -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Grab Up to 30% Off On Your Degital-Camera</h2>
+      <p>Check out our latest collection of high-quality Degital-Cameras. Don’t miss out on these special discounts!</p>
+      <button>Shop Now</button>
+    </div>
+    <img src="c:\Users\hp\Downloads\DreamyCam.png" alt="Headphones">
+  </section>
+
+  <!-- Products Section -->
+  <section class="products-section">
+    <h3>Degital-Camera For You!</h3>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="c:\Users\hp\Downloads\𝗦𝗢𝗟𝗗 𝗢𝗨𝗧  Samsung Camcorder SMX-F50-Model- SMX-F50 (2011)-Color- Black-Video Resolution- SD (Standard Definition), 720x480 pixels-Digital Zoom- Up to 65x Intelli-Zoom-Storage- SD-SDHC card compatible-Battery Li.jpg" alt="Headphone 1">
+        <div class="product-info">
+          <h4>Samsung Degital Camera</h4>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <div class="price">439 DH</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="c:\Users\hp\Downloads\𝗦𝗢𝗟𝗗 𝗢𝗨𝗧  Canon powershot e1- Condition- 10-10- 10-megapixel- 4x optical zoom lens with image stabilization- 4 battery- Flash and zoom functions work normally- No defects on the LCD screen- Results are super im.jpg" alt="Headphone 2">
+        <div class="product-info">
+          <h4>Canon Degital Camera</h4>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <div class="price">300 DH</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Dreamycam. All rights reserved.
+            Dev email : eddaoudi.bilal@dreamycam.com
+    </p>
+  </footer>
+
+</body>
+</html>
