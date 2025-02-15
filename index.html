@@ -246,100 +246,1729 @@
   </section>
 
   <!-- Products Section -->
-  <section class="products-section">
-    <h3>Digital Cameras For You!</h3>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="pictures/𝗦𝗢𝗟𝗗 𝗢𝗨𝗧  Samsung Camcorder SMX-F50-Model- SMX-F50 (2011)-Color- Black-Video Resolution- SD (Standard Definition), 720x480 pixels-Digital Zoom- Up to 65x Intelli-Zoom-Storage- SD-SDHC card compatible-Battery Li.jpg">
-        <div class="product-info">
-          <h4>Samsung Digital Camera</h4>
-          <div class="rating">⭐⭐⭐⭐☆</div>
-          <div class="price">439 DH</div>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="pictures/𝗦𝗢𝗟𝗗 𝗢𝗨𝗧  Canon powershot e1- Condition- 10-10- 10-megapixel- 4x optical zoom lens with image stabilization- 4 battery- Flash and zoom functions work normally- No defects on the LCD screen- Results are super im.jpg" alt="Camera 2">
-        <div class="product-info">
-          <h4>Canon Digital Camera</h4>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-          <div class="price">300 DH</div>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="pictures/ e Tech TDC-5000" alt="Camera 3">
-        <div class="product-info">
-          <h4>e Tech TDC-5000</h4>
-          <div class="rating">⭐⭐⭐⭐☆</div>
-          <div class="price">100 DH</div>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="Nikon coolpix 3200" alt="Camera 4">
-        <div class="product-info">
-          <h4>Nikon coolpix 3200</h4>
-          <div class="rating">⭐⭐⭐⭐☆</div>
-          <div class="price">240 DH</div>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="Pentax mz-50-" alt="Camera 5">
-        <div class="product-info">
-          <h4>Pentax mz-50</h4>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-          <div class="price">360 DH</div>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="pictures/Pentax Optio M50" alt="Camera 6">
-        <div class="product-info">
-          <h4>Pentax Optio M50</h4>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-          <div class="price">200 DH</div>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="pictures/digital video camera dv36" alt="Camera 7">
-        <div class="product-info">
-          <h4>Digital Camera DV36</h4>
-          <div class="rating">⭐⭐⭐⭐☆</div>
-          <div class="price">200 DH</div>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="pictures/sony cyber.jpg" alt="Camera 8">
-        <div class="product-info">
-          <h4>Sony Cybershot</h4>
-          <div class="rating">⭐⭐⭐⭐☆</div>
-          <div class="price">289 DH</div>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="pictures/pictures/Fujifilm FinePix AV200" alt="Camera 9">
-        <div class="product-info">
-          <h4>FujiFilm FinePix AV200</h4>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-          <div class="price">279 DH</div>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="pictures/kodak" alt="Camera 10">
-        <div class="product-info">
-          <h4>Kodak EasyShare DX7630</h4>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-          <div class="price">269 DH</div>
-          <button>Add to Cart</button>
-        </div>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dreamycam - Product Info</title>
+    <style>
+      /* Basic Style for the Product Card */
+      .product-card {
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background-color: white;
+        margin: 10px;
+        position: relative;
+        transition: transform 0.3s ease;
+      }
+  
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+  
+      .product-card img {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #ddd;
+      }
+  
+      .product-info {
+        padding: 15px;
+      }
+  
+      .product-info h4 {
+        font-size: 1.2rem;
+        color: #333;
+      }
+  
+      .product-info .rating {
+        font-size: 1rem;
+        color: #ff4f8a;
+      }
+  
+      .product-info .price {
+        font-size: 1.5rem;
+        color: #444;
+      }
+  
+      .more-about-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #ff4f8a;
+        color: white;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+  
+      .more-about-btn:hover {
+        background-color: #d93f75;
+      }
+  
+      /* Modal (card-like) Style */
+      .product-card-modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        width: 100%;
+        padding: 20px;
+        z-index: 1000;
+      }
+  
+      .product-card-modal img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+  
+      .product-card-modal h3 {
+        color: #ff4f8a;
+        font-size: 1.5rem;
+        margin-top: 10px;
+      }
+  
+      .product-card-modal .modal-description {
+        color: #444;
+        font-size: 1rem;
+        margin-top: 15px;
+      }
+  
+      .modal-close-btn {
+        margin-top: 15px;
+        background-color: #ff4f8a;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+  
+      .modal-close-btn:hover {
+        background-color: #d93f75;
+      }
+  
+      /* Overlay Background */
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 999;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <!-- Product Card Example -->
+    <div class="product-card">
+      <img src="pictures/your-image.jpg" alt="Product Image">
+      <div class="product-info">
+        <h4>Camera Model</h4>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <div class="price">300 DH</div>
+        <button class="more-about-btn" onclick="openModal()">More About</button>
       </div>
     </div>
+  
+    <!-- Modal for More About -->
+    <div class="overlay" id="overlay"></div>
+    <div class="product-card-modal" id="productCardModal">
+      <img src="pictures/your-image.jpg" alt="Product Image">
+      <h3>Camera Model</h3>
+      <div class="modal-description">
+        This camera offers excellent quality, is perfect for beginners and professionals alike, and is packed with features for optimal performance.
+      </div>
+      <div class="modal-description">
+        <strong>Price:</strong> 300 DH
+      </div>
+      <button class="modal-close-btn" onclick="closeModal()">Close</button>
+    </div>
+  
+    <script>
+      // Function to open the modal
+      function openModal() {
+        document.getElementById('productCardModal').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+      }
+  
+      // Function to close the modal
+      function closeModal() {
+        document.getElementById('productCardModal').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+      }
+  
+      // Close modal when clicking on overlay background
+      document.getElementById('overlay').onclick = closeModal;
+    </script>
+  
+  </body>
+  </html>
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dreamycam - Product Info</title>
+    <style>
+      /* Basic Style for the Product Card */
+      .product-card {
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background-color: white;
+        margin: 10px;
+        position: relative;
+        transition: transform 0.3s ease;
+      }
+  
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+  
+      .product-card img {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #ddd;
+      }
+  
+      .product-info {
+        padding: 15px;
+      }
+  
+      .product-info h4 {
+        font-size: 1.2rem;
+        color: #333;
+      }
+  
+      .product-info .rating {
+        font-size: 1rem;
+        color: #ff4f8a;
+      }
+  
+      .product-info .price {
+        font-size: 1.5rem;
+        color: #444;
+      }
+  
+      .more-about-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #ff4f8a;
+        color: white;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+  
+      .more-about-btn:hover {
+        background-color: #d93f75;
+      }
+  
+      /* Modal (card-like) Style */
+      .product-card-modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        width: 100%;
+        padding: 20px;
+        z-index: 1000;
+      }
+  
+      .product-card-modal img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+  
+      .product-card-modal h3 {
+        color: #ff4f8a;
+        font-size: 1.5rem;
+        margin-top: 10px;
+      }
+  
+      .product-card-modal .modal-description {
+        color: #444;
+        font-size: 1rem;
+        margin-top: 15px;
+      }
+  
+      .modal-close-btn {
+        margin-top: 15px;
+        background-color: #ff4f8a;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+  
+      .modal-close-btn:hover {
+        background-color: #d93f75;
+      }
+  
+      /* Overlay Background */
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 999;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <!-- Product Card Example -->
+    <div class="product-card">
+      <img src="pictures/your-image.jpg" alt="Product Image">
+      <div class="product-info">
+        <h4>Camera Model</h4>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <div class="price">300 DH</div>
+        <button class="more-about-btn" onclick="openModal()">More About</button>
+      </div>
+    </div>
+  
+    <!-- Modal for More About -->
+    <div class="overlay" id="overlay"></div>
+    <div class="product-card-modal" id="productCardModal">
+      <img src="pictures/your-image.jpg" alt="Product Image">
+      <h3>Camera Model</h3>
+      <div class="modal-description">
+        This camera offers excellent quality, is perfect for beginners and professionals alike, and is packed with features for optimal performance.
+      </div>
+      <div class="modal-description">
+        <strong>Price:</strong> 300 DH
+      </div>
+      <button class="modal-close-btn" onclick="closeModal()">Close</button>
+    </div>
+  
+    <script>
+      // Function to open the modal
+      function openModal() {
+        document.getElementById('productCardModal').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+      }
+  
+      // Function to close the modal
+      function closeModal() {
+        document.getElementById('productCardModal').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+      }
+  
+      // Close modal when clicking on overlay background
+      document.getElementById('overlay').onclick = closeModal;
+    </script>
+  
+  </body>
+  </html>
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dreamycam - Product Info</title>
+    <style>
+      /* Basic Style for the Product Card */
+      .product-card {
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background-color: white;
+        margin: 10px;
+        position: relative;
+        transition: transform 0.3s ease;
+      }
+  
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+  
+      .product-card img {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #ddd;
+      }
+  
+      .product-info {
+        padding: 15px;
+      }
+  
+      .product-info h4 {
+        font-size: 1.2rem;
+        color: #333;
+      }
+  
+      .product-info .rating {
+        font-size: 1rem;
+        color: #ff4f8a;
+      }
+  
+      .product-info .price {
+        font-size: 1.5rem;
+        color: #444;
+      }
+  
+      .more-about-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #ff4f8a;
+        color: white;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+  
+      .more-about-btn:hover {
+        background-color: #d93f75;
+      }
+  
+      /* Modal (card-like) Style */
+      .product-card-modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        width: 100%;
+        padding: 20px;
+        z-index: 1000;
+      }
+  
+      .product-card-modal img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+  
+      .product-card-modal h3 {
+        color: #ff4f8a;
+        font-size: 1.5rem;
+        margin-top: 10px;
+      }
+  
+      .product-card-modal .modal-description {
+        color: #444;
+        font-size: 1rem;
+        margin-top: 15px;
+      }
+  
+      .modal-close-btn {
+        margin-top: 15px;
+        background-color: #ff4f8a;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+  
+      .modal-close-btn:hover {
+        background-color: #d93f75;
+      }
+  
+      /* Overlay Background */
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 999;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <!-- Product Card Example -->
+    <div class="product-card">
+      <img src="pictures/your-image.jpg" alt="Product Image">
+      <div class="product-info">
+        <h4>Camera Model</h4>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <div class="price">300 DH</div>
+        <button class="more-about-btn" onclick="openModal()">More About</button>
+      </div>
+    </div>
+  
+    <!-- Modal for More About -->
+    <div class="overlay" id="overlay"></div>
+    <div class="product-card-modal" id="productCardModal">
+      <img src="pictures/your-image.jpg" alt="Product Image">
+      <h3>Camera Model</h3>
+      <div class="modal-description">
+        This camera offers excellent quality, is perfect for beginners and professionals alike, and is packed with features for optimal performance.
+      </div>
+      <div class="modal-description">
+        <strong>Price:</strong> 300 DH
+      </div>
+      <button class="modal-close-btn" onclick="closeModal()">Close</button>
+    </div>
+  
+    <script>
+      // Function to open the modal
+      function openModal() {
+        document.getElementById('productCardModal').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+      }
+  
+      // Function to close the modal
+      function closeModal() {
+        document.getElementById('productCardModal').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+      }
+  
+      // Close modal when clicking on overlay background
+      document.getElementById('overlay').onclick = closeModal;
+    </script>
+  
+  </body>
+  </html>
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dreamycam - Product Info</title>
+  <style>
+    /* Basic Style for the Product Card */
+    .product-card {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: white;
+      margin: 10px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h4 {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .product-info .rating {
+      font-size: 1rem;
+      color: #ff4f8a;
+    }
+
+    .product-info .price {
+      font-size: 1.5rem;
+      color: #444;
+    }
+
+    .more-about-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #ff4f8a;
+      color: white;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .more-about-btn:hover {
+      background-color: #d93f75;
+    }
+
+    /* Modal (card-like) Style */
+    .product-card-modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    .product-card-modal img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card-modal h3 {
+      color: #ff4f8a;
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    .product-card-modal .modal-description {
+      color: #444;
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+
+    .modal-close-btn {
+      margin-top: 15px;
+      background-color: #ff4f8a;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .modal-close-btn:hover {
+      background-color: #d93f75;
+    }
+
+    /* Overlay Background */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Product Card Example -->
+  <div class="product-card">
+    <img src="pictures/your-image.jpg" alt="Product Image">
+    <div class="product-info">
+      <h4>Camera Model</h4>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <div class="price">300 DH</div>
+      <button class="more-about-btn" onclick="openModal()">More About</button>
+    </div>
+  </div>
+
+  <!-- Modal for More About -->
+  <div class="overlay" id="overlay"></div>
+  <div class="product-card-modal" id="productCardModal">
+    <img src="pictures/your-image.jpg" alt="Product Image">
+    <h3>Camera Model</h3>
+    <div class="modal-description">
+      This camera offers excellent quality, is perfect for beginners and professionals alike, and is packed with features for optimal performance.
+    </div>
+    <div class="modal-description">
+      <strong>Price:</strong> 300 DH
+    </div>
+    <button class="modal-close-btn" onclick="closeModal()">Close</button>
+  </div>
+
+  <script>
+    // Function to open the modal
+    function openModal() {
+      document.getElementById('productCardModal').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+
+    // Function to close the modal
+    function closeModal() {
+      document.getElementById('productCardModal').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+    // Close modal when clicking on overlay background
+    document.getElementById('overlay').onclick = closeModal;
+  </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dreamycam - Product Info</title>
+  <style>
+    /* Basic Style for the Product Card */
+    .product-card {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: white;
+      margin: 10px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h4 {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .product-info .rating {
+      font-size: 1rem;
+      color: #ff4f8a;
+    }
+
+    .product-info .price {
+      font-size: 1.5rem;
+      color: #444;
+    }
+
+    .more-about-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #ff4f8a;
+      color: white;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .more-about-btn:hover {
+      background-color: #d93f75;
+    }
+
+    /* Modal (card-like) Style */
+    .product-card-modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    .product-card-modal img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card-modal h3 {
+      color: #ff4f8a;
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    .product-card-modal .modal-description {
+      color: #444;
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+
+    .modal-close-btn {
+      margin-top: 15px;
+      background-color: #ff4f8a;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .modal-close-btn:hover {
+      background-color: #d93f75;
+    }
+
+    /* Overlay Background */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Product Card Example -->
+  <div class="product-card">
+    <img src="pictures/your-image.jpg" alt="Product Image">
+    <div class="product-info">
+      <h4>Camera Model</h4>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <div class="price">300 DH</div>
+      <button class="more-about-btn" onclick="openModal()">More About</button>
+    </div>
+  </div>
+
+  <!-- Modal for More About -->
+  <div class="overlay" id="overlay"></div>
+  <div class="product-card-modal" id="productCardModal">
+    <img src="pictures/your-image.jpg" alt="Product Image">
+    <h3>Camera Model</h3>
+    <div class="modal-description">
+      This camera offers excellent quality, is perfect for beginners and professionals alike, and is packed with features for optimal performance.
+    </div>
+    <div class="modal-description">
+      <strong>Price:</strong> 300 DH
+    </div>
+    <button class="modal-close-btn" onclick="closeModal()">Close</button>
+  </div>
+
+  <script>
+    // Function to open the modal
+    function openModal() {
+      document.getElementById('productCardModal').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+
+    // Function to close the modal
+    function closeModal() {
+      document.getElementById('productCardModal').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+    // Close modal when clicking on overlay background
+    document.getElementById('overlay').onclick = closeModal;
+  </script>
+
+</body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dreamycam - Product Info</title>
+  <style>
+    /* Basic Style for the Product Card */
+    .product-card {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: white;
+      margin: 10px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h4 {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .product-info .rating {
+      font-size: 1rem;
+      color: #ff4f8a;
+    }
+
+    .product-info .price {
+      font-size: 1.5rem;
+      color: #444;
+    }
+
+    .more-about-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #ff4f8a;
+      color: white;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .more-about-btn:hover {
+      background-color: #d93f75;
+    }
+
+    /* Modal (card-like) Style */
+    .product-card-modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    .product-card-modal img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card-modal h3 {
+      color: #ff4f8a;
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    .product-card-modal .modal-description {
+      color: #444;
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+
+    .modal-close-btn {
+      margin-top: 15px;
+      background-color: #ff4f8a;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .modal-close-btn:hover {
+      background-color: #d93f75;
+    }
+
+    /* Overlay Background */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Product Card Example -->
+  <div class="product-card">
+    <img src="pictures/your-image.jpg" alt="Product Image">
+    <div class="product-info">
+      <h4>Camera Model</h4>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <div class="price">300 DH</div>
+      <button class="more-about-btn" onclick="openModal()">More About</button>
+    </div>
+  </div>
+
+  <!-- Modal for More About -->
+  <div class="overlay" id="overlay"></div>
+  <div class="product-card-modal" id="productCardModal">
+    <img src="pictures/your-image.jpg" alt="Product Image">
+    <h3>Camera Model</h3>
+    <div class="modal-description">
+      This camera offers excellent quality, is perfect for beginners and professionals alike, and is packed with features for optimal performance.
+    </div>
+    <div class="modal-description">
+      <strong>Price:</strong> 300 DH
+    </div>
+    <button class="modal-close-btn" onclick="closeModal()">Close</button>
+  </div>
+
+  <script>
+    // Function to open the modal
+    function openModal() {
+      document.getElementById('productCardModal').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+
+    // Function to close the modal
+    function closeModal() {
+      document.getElementById('productCardModal').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+    // Close modal when clicking on overlay background
+    document.getElementById('overlay').onclick = closeModal;
+  </script>
+  <style>
+    /* Basic Style for the Product Card */
+    .product-card {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: white;
+      margin: 10px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h4 {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .product-info .rating {
+      font-size: 1rem;
+      color: #ff4f8a;
+    }
+
+    .product-info .price {
+      font-size: 1.5rem;
+      color: #444;
+    }
+
+    .more-about-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #ff4f8a;
+      color: white;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .more-about-btn:hover {
+      background-color: #d93f75;
+    }
+
+    /* Modal (card-like) Style */
+    .product-card-modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    .product-card-modal img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card-modal h3 {
+      color: #ff4f8a;
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    .product-card-modal .modal-description {
+      color: #444;
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+
+    .modal-close-btn {
+      margin-top: 15px;
+      background-color: #ff4f8a;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .modal-close-btn:hover {
+      background-color: #d93f75;
+    }
+
+    /* Overlay Background */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Product Card Example -->
+  <div class="product-card">
+    <img src="pictures/your-image.jpg" alt="Product Image">
+    <div class="product-info">
+      <h4>Camera Model</h4>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <div class="price">300 DH</div>
+      <button class="more-about-btn" onclick="openModal()">More About</button>
+    </div>
+  </div>
+
+  <!-- Modal for More About -->
+  <div class="overlay" id="overlay"></div>
+  <div class="product-card-modal" id="productCardModal">
+    <img src="pictures/your-image.jpg" alt="Product Image">
+    <h3>Camera Model</h3>
+    <div class="modal-description">
+      This camera offers excellent quality, is perfect for beginners and professionals alike, and is packed with features for optimal performance.
+    </div>
+    <div class="modal-description">
+      <strong>Price:</strong> 300 DH
+    </div>
+    <button class="modal-close-btn" onclick="closeModal()">Close</button>
+  </div>
+
+  <script>
+    // Function to open the modal
+    function openModal() {
+      document.getElementById('productCardModal').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+
+    // Function to close the modal
+    function closeModal() {
+      document.getElementById('productCardModal').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+    // Close modal when clicking on overlay background
+    document.getElementById('overlay').onclick = closeModal;
+  </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dreamycam - Product Info</title>
+  <style>
+    /* Basic Style for the Product Card */
+    .product-card {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: white;
+      margin: 10px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h4 {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .product-info .rating {
+      font-size: 1rem;
+      color: #ff4f8a;
+    }
+
+    .product-info .price {
+      font-size: 1.5rem;
+      color: #444;
+    }
+
+    .more-about-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #ff4f8a;
+      color: white;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .more-about-btn:hover {
+      background-color: #d93f75;
+    }
+
+    /* Modal (card-like) Style */
+    .product-card-modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    .product-card-modal img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card-modal h3 {
+      color: #ff4f8a;
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    .product-card-modal .modal-description {
+      color: #444;
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+
+    .modal-close-btn {
+      margin-top: 15px;
+      background-color: #ff4f8a;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .modal-close-btn:hover {
+      background-color: #d93f75;
+    }
+
+    /* Overlay Background */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Product Card Example -->
+  <div class="product-card">
+    <img src="pictures/your-image.jpg" alt="Product Image">
+    <div class="product-info">
+      <h4>Camera Model</h4>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <div class="price">300 DH</div>
+      <button class="more-about-btn" onclick="openModal()">More About</button>
+    </div>
+  </div>
+
+  <!-- Modal for More About -->
+  <div class="overlay" id="overlay"></div>
+  <div class="product-card-modal" id="productCardModal">
+    <img src="pictures/your-image.jpg" alt="Product Image">
+    <h3>Camera Model</h3>
+    <div class="modal-description">
+      This camera offers excellent quality, is perfect for beginners and professionals alike, and is packed with features for optimal performance.
+    </div>
+    <div class="modal-description">
+      <strong>Price:</strong> 300 DH
+    </div>
+    <button class="modal-close-btn" onclick="closeModal()">Close</button>
+  </div>
+
+  <script>
+    // Function to open the modal
+    function openModal() {
+      document.getElementById('productCardModal').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+
+    // Function to close the modal
+    function closeModal() {
+      document.getElementById('productCardModal').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+    // Close modal when clicking on overlay background
+    document.getElementById('overlay').onclick = closeModal;
+  </script>
+
+</body>
+</html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dreamycam - Product Info</title>
+  <style>
+    /* Basic Style for the Product Card */
+    .product-card {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: white;
+      margin: 10px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h4 {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .product-info .rating {
+      font-size: 1rem;
+      color: #ff4f8a;
+    }
+
+    .product-info .price {
+      font-size: 1.5rem;
+      color: #444;
+    }
+
+    .more-about-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #ff4f8a;
+      color: white;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .more-about-btn:hover {
+      background-color: #d93f75;
+    }
+
+    /* Modal (card-like) Style */
+    .product-card-modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    .product-card-modal img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card-modal h3 {
+      color: #ff4f8a;
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    .product-card-modal .modal-description {
+      color: #444;
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+
+    .modal-close-btn {
+      margin-top: 15px;
+      background-color: #ff4f8a;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .modal-close-btn:hover {
+      background-color: #d93f75;
+    }
+
+    /* Overlay Background */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Product Card Example -->
+  <div class="product-card">
+    <img src="pictures/your-image.jpg" alt="Product Image">
+    <div class="product-info">
+      <h4>Camera Model</h4>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <div class="price">300 DH</div>
+      <button class="more-about-btn" onclick="openModal()">More About</button>
+    </div>
+  </div>
+
+  <!-- Modal for More About -->
+  <div class="overlay" id="overlay"></div>
+  <div class="product-card-modal" id="productCardModal">
+    <img src="pictures/your-image.jpg" alt="Product Image">
+    <h3>Camera Model</h3>
+    <div class="modal-description">
+      This camera offers excellent quality, is perfect for beginners and professionals alike, and is packed with features for optimal performance.
+    </div>
+    <div class="modal-description">
+      <strong>Price:</strong> 300 DH
+    </div>
+    <button class="modal-close-btn" onclick="closeModal()">Close</button>
+  </div>
+
+  <script>
+    // Function to open the modal
+    function openModal() {
+      document.getElementById('productCardModal').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+
+    // Function to close the modal
+    function closeModal() {
+      document.getElementById('productCardModal').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+    // Close modal when clicking on overlay background
+    document.getElementById('overlay').onclick = closeModal;
+  </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dreamycam - Product Info</title>
+  <style>
+    /* Basic Style for the Product Card */
+    .product-card {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: white;
+      margin: 10px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h4 {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .product-info .rating {
+      font-size: 1rem;
+      color: #ff4f8a;
+    }
+
+    .product-info .price {
+      font-size: 1.5rem;
+      color: #444;
+    }
+
+    .more-about-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #ff4f8a;
+      color: white;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .more-about-btn:hover {
+      background-color: #d93f75;
+    }
+
+    /* Modal (card-like) Style */
+    .product-card-modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    .product-card-modal img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card-modal h3 {
+      color: #ff4f8a;
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    .product-card-modal .modal-description {
+      color: #444;
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+
+    .modal-close-btn {
+      margin-top: 15px;
+      background-color: #ff4f8a;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .modal-close-btn:hover {
+      background-color: #d93f75;
+    }
+
+    /* Overlay Background */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Product Card Example -->
+  <div class="product-card">
+    <img src="pictures/your-image.jpg" alt="Product Image">
+    <div class="product-info">
+      <h4>Camera Model</h4>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <div class="price">300 DH</div>
+      <button class="more-about-btn" onclick="openModal()">More About</button>
+    </div>
+  </div>
+
+  <!-- Modal for More About -->
+  <div class="overlay" id="overlay"></div>
+  <div class="product-card-modal" id="productCardModal">
+    <img src="pictures/your-image.jpg" alt="Product Image">
+    <h3>Camera Model</h3>
+    <div class="modal-description">
+      This camera offers excellent quality, is perfect for beginners and professionals alike, and is packed with features for optimal performance.
+    </div>
+    <div class="modal-description">
+      <strong>Price:</strong> 300 DH
+    </div>
+    <button class="modal-close-btn" onclick="closeModal()">Close</button>
+  </div>
+
+  <script>
+    // Function to open the modal
+    function openModal() {
+      document.getElementById('productCardModal').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+
+    // Function to close the modal
+    function closeModal() {
+      document.getElementById('productCardModal').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+    // Close modal when clicking on overlay background
+    document.getElementById('overlay').onclick = closeModal;
+  </script>
+
+</body>
+</html>
+
   </section>
   <!DOCTYPE html>
   <html lang="en">
